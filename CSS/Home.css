@@ -1,0 +1,33 @@
+
+
+*{
+    background-color: #E3BAB3;
+}
+
+nav{
+    background-color: aqua;
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: aliceblue;
+    font-family: sans-serif;
+    position:fixed;
+    top:0;
+    width:100%;
+    }
+
+.footer {
+        background-color: #36384C;
+        width: 100%;
+        padding: 40px;
+    }
+
+.contenedor-footer{
+       
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+    }
+    
+   
