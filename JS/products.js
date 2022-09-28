@@ -898,7 +898,7 @@ const products = [
     company: 'LIBRERIA',
     image:
       './Img/LIBRERIA/todolists.jpg',
-    price: 200,
+    price: 300,
   },
 
 
