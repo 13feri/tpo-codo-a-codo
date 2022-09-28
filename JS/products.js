@@ -358,7 +358,7 @@ const products = [
     description:"Pulsera de Acero Quirurgico dije de cruz y bolitas ",
     company: 'ACCESORIOS',
     image:
-      './Img/ACCESORIOS/pulcera.webp',
+      './Img/ACCESORIOS/PULACERA.webp',
     price: 650,
   },
   {
@@ -415,24 +415,7 @@ const products = [
       './Img/ACCESORIOS/luz accesorio.jpg',
     price: 1050,
   },
-  {
-    id: '46',
-    title: '',
-    description:" ",
-    company: 'ACCESORIOS',
-    image:
-      './Img/ACCESORIOS/',
-    price: 0,
-  },
-  {
-    id: '47',
-    title: '',
-    description:" ",
-    company: 'ACCESORIOS',
-    image:
-      './Img/ACCESORIOS/',
-    price: 0,
-  },
+  
   {
     id: '48',
     title: 'Set | Set  tabla 5 casuelas picada',
