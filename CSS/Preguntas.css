@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: "paper";
+    src: url(../Font/Paper\ Banner-Regular.ttf);
+}
+
+h1 {
+    font-family: "paper";
+    font-size: 75px;
+}

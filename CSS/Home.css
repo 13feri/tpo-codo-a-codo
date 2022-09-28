@@ -1,9 +1,15 @@
 
-
+@font-face {
+    font-family: "cute";
+    src: url(../Font/Cute\ Notes.ttf);
+}
 *{
     background-color: #E3BAB3;
 }
 
+h1 {
+    font-family: "cute";
+}
 nav{
     background-color: aqua;
     display:grid;
