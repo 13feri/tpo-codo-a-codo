@@ -1,39 +1,255 @@
-
+/* -----------------FUENTES---------------------- */
 @font-face {
     font-family: "cute";
     src: url(../Font/Cute\ Notes.ttf);
 }
-*{
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(../Font/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Darling";
+    src: url(../Font/Darling.ttf);
+}
+
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
+
+@font-face {
+    font-family: "Caidas";
+    src: url(../Font/Hanged\ Letters.ttf);
+}
+
+/* -----------------COLORES---------------------- */
+:root{
+    --color1: #E3BAB3;
+    --color2: #613a43;
+    --color3: #849974;
+    --color4: #36384c;
+    --color5: #E9DCCD;
+}
+
+/* -----------------NAVBAR---------------------- */
+.contenedor-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color2);
+}
+
+.contenedor-nav .nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--color2) ;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.box-logo .logo{
+    color: var(--color5);
+    font-size: 30px;
+    font-family: 'Darling';
+    font-weight: 300;
+    text-decoration: none;
+}
+.nav .navb-link{
+    color: var(--color5);
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.nav .navb-link:hover{
+    color: var(--color4);
+}
+
+/* -----------------BODY---------------------- */
+
+/* -----------------titulo principal---------------------- */
+
+.titulo{
     background-color: #E3BAB3;
 }
 
-h1 {
+.titulo .tituloprin{
     font-family: "cute";
+    text-align: center;
+    font-size: 100px;
+    color: var(--color4);
+
 }
-nav{
-    background-color: aqua;
-    display:grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    background: aliceblue;
-    font-family: sans-serif;
-    position:fixed;
-    top:0;
-    width:100%;
+
+/* -----------------TITULO SECUNDARIO---------------------- */
+
+.titulo2{
+    background-color: #E3BAB3;
+}
+
+.titulo2 .titulosec{
+    font-family: "Caidas";
+    text-align: center;
+    font-size: 70px;
+    color: var(--color4);
+
+}
+
+/* -----------------BODY---------------------- */
+
+.lista-producto .lista-productos .container-productos {
+    align-items: centro;
+    justify-content: start;
+    margin: 20px 50px 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+
+    }
+    .card-producto{
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-.footer {
-        background-color: #36384C;
-        width: 100%;
-        padding: 40px;
-    }
 
+.card-producto .imagen-producto{
+    width: 95%;
+}
+.imagen-producto{
+    transition: 0.5s;
+}
+ .imagen-producto:hover{
+    width: 100%;
+    height: 400px;
+}
+.info-producto{
+    text-align: center;
+    background-color: var(--color5);
+    width: 100%;
+}
+.btn-ver-detalle{
+    border: none;
+    background-color:transparent;
+    width: 100%;
+}
+.btn-ver-detalle a{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-ver-detalle a:hover{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-ver-detalle .txt-nombre-producto{
+    font-family: 'Lato-Light';
+    font-size: 16px;
+}
+.info-producto .txt-nombre-producto{
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    color: var(--color2);
+}
+.info-producto .precio{
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    color: var(--color2);
+}
+.info-producto .ver-mas{
+    text-decoration: none;
+    color: var(--color3);
+}
+.info-producto .ver-mas:hover{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+/* -----------------FOOTER---------------------- */
+
+.footer{
+    background-color: var(--color4);
+    width: 100%;
+    padding: 40px;
+    
+}
+ 
 .contenedor-footer{
-       
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 60px;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+.contenedor-footer .contenedor1{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor1 h4{
+    font-family: "Cool";
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color1);
+}
+.contenedor1 a{
+    text-decoration: none;
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor1 a:hover{
+    text-decoration: none;
+    color: var(--color3);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor-footer h4{
+    font-family: 'Cool';
+    font-weight: 600;
+    font-size: 24px;
+}
+.contenedor-footer .contenedor2{
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    
+}
+.contenedor2 h4{
+    font-family: "Cool";
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color1);
+}
+.contenedor2 a{
+    text-decoration: none;
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor2 a:hover{
+    text-decoration: none;
+    color: var(--color3);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+
+
+
     
    

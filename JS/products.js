@@ -613,15 +613,7 @@ const products = [
     image:
       './Img/DECOHOGAR/relojpared.jpg',
     price: 2200,
-  },
-
-
-
-
-
-
-
- 
+  }, 
   {
     id: '70',
     title: 'Botella térmica',
