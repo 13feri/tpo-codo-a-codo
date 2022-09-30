@@ -4,11 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Detail.css">
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.min.css">
+    <title>Bolucompra</title>
 </head>
 <body>
-    <h1>Detalles</h1>
+    <!-----------------NAVBAR----------------------- -->
+    <div class="contenedor-nav">
+        <nav class="nav-bar">
+          <div class="box-logo">
+              <a class="logo" href="Home.html">Bolucompras</a>
+          </div>
+          <div class="nav">
+              <a class="navb-link" href="./Home.html"> HOME</a>
+              <a class="navb-link" href="./Productos.htm">PRODUCTOS</a>
+              <a class="navb-link" href="./Contactos.html">CONTACTOS</a>
+              <a class="navb-link" href="./Preguntas.html">PREGUNTAS FRECUENTAS</a>
+              <a class="navb-link" href="./Comprar.html">¿CÓMO COMPRAR?</a>
+              
+          </div>
+      </div>
+  
+    <!-----------------NAVBAR----------------------- -->
+    <!-- ----------MAIN---------------------- -->
+    <section class="seccion-lienzo">
+        <div class="contenedor-info-producto">
+            <section class="contendeor-imagen-descripcion">
+                <!-- -------DIV LIENZO PARA LA IMAGEN ------>
 
+                
+                <div id="lienzo" class="lienzo row">
+
+                </div>
+                <!-- --------PARRAFO PARA LA DESCRIPCION -->
+                <p id="descripcion" >
+                </p>
+
+            </section>
+        </div>
+        <div>
+            <section class="contenedor-info-producto">
+                <div class="box-nombre-producto">
+                    <!-- -------H1 PARA EL NOMBRE DEL PRODUCTO----- -->
+                    <h1 class="txt-nombre-producto" id="nombreProducto"></h1>
+                </div>
+                <div class="box-precio">
+                    <!-- -------SPAN PARA EL PRECIO------- -->
+                    <span class="precio" id="precio"></span>
+                </div>
+               
+                    
+                        <ul>
+                            <li>
+                                <!-- -------H6 PARA LOS DETALLES DE CATEGORIA PRODUCTO Y MARCA------ -->
+                                
+                                    <h2 class="txt-h2">información del producto</h2>
+                                    <h6 class="txt-h6" id="categoria"></h6>
+                                    <h6 class="txt-h6" id="producto"></h6>
+                                    
+                               
+
+                            </li>
+                           
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+ <!-- -------------SCRIPTS------------------------ -->
+ <script src="./JS/products.js"></script>
+ <script src="./JS/Detail.js"></script>
+ <script src="./JS/Bootstrap/bootstrap.min.js"></script>
+ <script src="./Js/jquery.min.js"></script>
     
 </body>
 </html>

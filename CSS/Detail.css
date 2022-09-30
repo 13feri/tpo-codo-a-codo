@@ -1,0 +1,134 @@
+/* -----------------FUENTES---------------------- */
+@font-face {
+    font-family: "cute";
+    src: url(../Font/Cute\ Notes.ttf);
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(../Font/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Darling";
+    src: url(../Font/Darling.ttf);
+}
+
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
+
+@font-face {
+    font-family: "Caidas";
+    src: url(../Font/Hanged\ Letters.ttf);
+}
+
+/* -----------------COLORES---------------------- */
+:root{
+    --color1: #E3BAB3;
+    --color2: #613a43;
+    --color3: #849974;
+    --color4: #36384c;
+    --color5: #E9DCCD;
+}
+
+/* -----------------NAVBAR---------------------- */
+.contenedor-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color2);
+}
+
+.contenedor-nav .nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--color2) ;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.box-logo .logo{
+    color: var(--color5);
+    font-size: 30px;
+    font-family: 'Darling';
+    font-weight: 300;
+    text-decoration: none;
+}
+.nav .navb-link{
+    color: var(--color5);
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.nav .navb-link:hover{
+    color: var(--color4);
+}
+
+
+
+/* -----------------ESTILOS DEL MAIN---------------- */
+.seccion-lienzo{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+.lienzo{
+    width: 500px;
+    height: 500px;
+    border: 1px solid var(--color3);
+    margin: auto;
+    align-items: center;
+}
+#descripcion{
+    width: 500px;
+    height: 300px;
+    text-align: justify;
+    margin-top: 10px;
+    overflow: hidden;
+    color: #613a43;
+}
+
+.contenedor-info-producto{
+    margin-top: 40px;
+}
+.box-nombre-producto{
+    width: 355px;
+    height: 30px;
+    background-color: transparent;
+}
+.box-nombre-producto .txt-nombre-producto{
+    font-family: 'Lato-Light';
+    color: var(--color3);
+    font-size: 22px;
+    
+    text-decoration: overline;
+    text-decoration-color: var(--color2);
+}
+.box-precio{
+    width: 355px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 40px;
+    text-align: left;
+}
+.box-precio .precio{
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    color: var(--color3);
+}
