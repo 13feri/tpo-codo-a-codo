@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+
+<script
+ src="http://kit.fontawesome.com/eb496ab1a0.js"></script>
+
+     <link rel="stylesheet" href="Contactos.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+
+ 
+    
+    
+
+
+</head>
+<body>
+    
+
+    <div class="contact_-form">
+
+        <div class="formulario">
+
+          
+            <h1> FORMULARIO  DE  CONTACTOS</h1>
+            <h3>ESCRIBENOS  EN  BREVE  NOS  PONDREMOS  EN  CONTACTO  CONTIGO</h3>
+                
+    
+<form action="submeter-formulario.php" method="post">
+    <p>
+        <label for="nombre" class="colocar_nombre">NOMBRE<span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_nombre" id="nombre"
+        required="obligatorio" placeholder="escribe tu nombre">
+    </p>
+    <p>
+        <label for="email" class="colocar_email">EMAIL
+            <span class="obligatorio"> *</span> 
+            </label>
+            <input type="email" 
+            name="introducir_email" id="email"
+             required="obligatorio" placeholder="escribe tu email">
+
+</p>
+
+<p>
+<label for="telefone" class="colocar_telefono" >TELEFONO</label>
+<input type="tel" name="introducir_telefono" id="telefono"
+placeholder="escribe tu telefono">
+</p>
+
+<p>
+
+    <label for="asunto" class="colocar_asunto">ASUNTO<span class="obligatorio">*</span>
+    </label>
+    <input type="text" name="introducir_asunto" id="asunto"
+    required="obligatorio" placeholder="escribe un asunto">
+</p>
+
+<p>
+<label for="mensaje" class="colocar_mensaje"> MENSAJE<span>*</span>
+</label>
+<textarea name="introducir mensaje" id="mensaje"
+required="obligatorio" placeholder="deja aqui tu comentario..."></textarea>
+</p>
+
+<button type="submit" name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
+
+<p class="aviso"><span class="obligatorio">*</span>los campos son obligatorios </p>
+</form>       
+
+
+</body>
+</html>
