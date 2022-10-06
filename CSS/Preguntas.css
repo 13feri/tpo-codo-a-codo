@@ -12,6 +12,10 @@
     font-family: "Darling";
     src: url(../Font/Darling.ttf);
 }
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
 
 /* -----------------COLORES---------------------- */
 :root{
@@ -73,11 +77,11 @@ body{
 
 .accordion{
     padding: 25px;
-    background-color: #36384c;
+    background-color: var(--color3);
 }
 
 
-h1 {
+.tituloprin {
     font-family: "paper";
     font-size: 75px;
     text-align: center;

@@ -13,6 +13,15 @@
     font-family: "Darling";
     src: url(../Font/Darling.ttf);
 }
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
+
+@font-face {
+    font-family: "Chicken";
+    src: url(../Font/CHICKEN\ Pie.ttf);
+}
 
 /* -----------------COLORES---------------------- */
 :root{
@@ -67,17 +76,16 @@
 }
 
 
+/* -----------------BODY---------------------- */
 
-
-
-
-
-h1 {
+.tituloprin {
     font-family: "paper";
-    font-size: 300px;
+    font-size: 75px;
     text-align: center;
-
-
+    color: #36384c;
+}
+.subtitulo{
+    font-family: "Chicken" ;
 }
 
 main {
@@ -144,6 +152,17 @@ main section article img {
     width: 100%;
     
 }
+
+main section article a{
+    color: #613a43;
+    font-family: "Lato Light";
+    font-weight: bolder;
+}
+main section article a:hover{
+    color: var(--color5);
+}
+    
+
 /* -----------------FOOTER---------------------- */
 
 .footer{

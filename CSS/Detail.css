@@ -1,7 +1,7 @@
 /* -----------------FUENTES---------------------- */
 @font-face {
-    font-family: "cute";
-    src: url(../Font/Cute\ Notes.ttf);
+    font-family: "paper";
+    src: url(../Font/Paper\ Banner-Regular.ttf);
 }
 
 @font-face {
@@ -20,9 +20,10 @@
 }
 
 @font-face {
-    font-family: "Caidas";
-    src: url(../Font/Hanged\ Letters.ttf);
+    font-family: "Caviar";
+    src: url(../Font/CaviarDreams.ttf);
 }
+
 
 /* -----------------COLORES---------------------- */
 :root{
@@ -80,6 +81,13 @@
 
 
 /* -----------------ESTILOS DEL MAIN---------------- */
+.tituloprin {
+    font-family: "paper";
+    font-size: 75px;
+    text-align: center;
+}
+
+
 .seccion-lienzo{
     width: 80%;
     margin: auto;
@@ -95,15 +103,6 @@
     margin: auto;
     align-items: center;
 }
-#descripcion{
-    width: 500px;
-    height: 300px;
-    text-align: justify;
-    margin-top: 10px;
-    overflow: hidden;
-    color: #613a43;
-}
-
 .contenedor-info-producto{
     margin-top: 40px;
 }
@@ -113,12 +112,11 @@
     background-color: transparent;
 }
 .box-nombre-producto .txt-nombre-producto{
-    font-family: 'Lato-Light';
+    font-family: 'Caviar';
     color: var(--color3);
-    font-size: 22px;
-    
-    text-decoration: overline;
+    font-size: 22px;     
     text-decoration-color: var(--color2);
+    font-weight: bolder;
 }
 .box-precio{
     width: 355px;
@@ -131,6 +129,24 @@
     font-family: 'Lato-Light';
     font-size: 18px;
     color: var(--color3);
+}
+.descripcion{
+    width: 500px;
+    height: 200px;
+    text-align: justify;
+    margin-top: 10px;
+    overflow: hidden;
+    color: #613a43;
+}
+.btn-carrito{
+    background-color: #613a43;
+    color: #E3BAB3;
+    border-radius: 8px;
+    border: 2px solid #E3BAB3;
+}
+
+.btn-carrito:hover{
+    background-color: #36384c;
 }
 
 /* -----------------FOOTER---------------------- */
