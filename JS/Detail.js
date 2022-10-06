@@ -4,7 +4,7 @@
  */
  function mostrarProductos(ev){
         
-    let elemento = $('#lienzo');
+    let elemento = $("#lienzo");
      let h1 = document.getElementById('nombreProducto');
      let precio = document.getElementById('precio');
      let descripcion = document.getElementById('descripcion');
@@ -15,7 +15,7 @@
     let producto = products.find(x => x.id == idProducto);
        
     elemento.append(`
-        <img src="${producto.image}" class="card-img-top"  style="max-height: 400px; margin-bottom: 20px;"  alt="...">
+        <img src="${producto.image}"  class="card-img-top"  style="max-height: 400px; margin-bottom: 20px;"  alt="...">
        
       `);
   h1.innerHTML = producto.title
