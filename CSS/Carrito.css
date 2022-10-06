@@ -1,5 +1,30 @@
 /* -----------------FUENTES---------------------- */
 @font-face {
+    font-family: "cute";
+    src: url(../Font/Cute\ Notes.ttf);
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(../Font/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Darling";
+    src: url(../Font/Darling.ttf);
+}
+
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
+
+@font-face {
+    font-family: "Caidas";
+    src: url(../Font/Hanged\ Letters.ttf);
+}
+/* -----------------FUENTES---------------------- */
+@font-face {
     font-family: "paper";
     src: url(../Font/Paper\ Banner-Regular.ttf);
 }
@@ -22,11 +47,20 @@
     --color4: #36384c;
     --color5: #E9DCCD;
 }
+/* -----------------COLORES---------------------- */
+:root{
+    --color1: #E3BAB3;
+    --color2: #613a43;
+    --color3: #849974;
+    --color4: #36384c;
+    --color5: #E9DCCD;
+}
 
 /* -----------------NAVBAR---------------------- */
 .contenedor-nav{
     width: 100%;
     height: auto;
+    display: flex;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -66,84 +100,59 @@
     color: var(--color4);
 }
 
-
-
-
-
-
+/* -----------------BODY---------------------- */
 
 h1 {
     font-family: "paper";
-    font-size: 300px;
+    font-size: 80px;
     text-align: center;
 
 
 }
 
-main {
-    display: flex;
-    width: 90%;
-    margin: 50px auto;
+
+/*product cards*/
+.shop-content{
+  justify-content: space-around ;
+  flex-wrap: wrap ;
+  margin-top : 30px ;
+  margin-left : 80px ;
+  margin-right : 80px ;
+  display: flex;
 }
 
-main nav {
-    flex-direction: column;
-    min-width: 250px;
-    width: 20%;
-    padding: 15px;
-}
-
-main nav input {
-	padding: 0.5rem;
-	background: #e2e8f0;
-	border-radius: 5px;
-	border-color: transparent;
-	letter-spacing: 1px;
-}
-
-main nav h2 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.empresa-btn {
-	display: block;
-	margin: 0.25em 0;
-	padding: 0.25rem;
-	text-transform: capitalize;
-	background: transparent;
-	border-color: transparent;
-	letter-spacing: var(--letterSpacing);
-	color: var(--grey-500);
-	cursor: pointer;
-	transition: var(--transition);
-	font-size: 0.85rem;
-}
-
-main section {
-    flex-direction: column;
-    width: 80%;
-    padding: 15px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    
-}
-
-main section article {
-    height: 234px;
-    width: 250px;
-    margin: 5px;
+.card{
+    max-width: 250px;
     text-align: center;
-    
+    font-family: Arial;
+    margin: 10px;
 }
 
-main section article img {
-    height: 180px;
+.card image {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    background-color: #E3BAB3;
+    color: #36384c;
+    text-align: center;
+    cursor: pointer;
     width: 100%;
-    
+    font-size: 18px;
 }
+.card button:hover{
+    opacity: 0.8;
+}
+.price{
+    color: black;
+    font-size: 21px;
+}
+
 /* -----------------FOOTER---------------------- */
 
 .footer{

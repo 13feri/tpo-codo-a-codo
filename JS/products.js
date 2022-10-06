@@ -638,7 +638,7 @@ const products = [
     description:"Con este innovador modelo vas a poder optimizar el máximo espacio posible. No pierde y cuando queda vacía, podes guardarla hasta en el bolsillo más pequeño. Capacidad: 350ml.",
     company: 'BOTELLAS',
     image:
-      './Img/BOTELLAS/botellabolsa',
+      './Img/BOTELLAS/botellabolsa.jpg',
     price: 980,
   },
   {
@@ -764,7 +764,7 @@ const products = [
     description:" Llena tus espacios de buenas vibras con sahumerios. Este box tiene 15 sahumerios variados. ",
     company: 'AROMATERAPIA',
     image:
-      './Img/AROMATERAPIA/sahumerios.jpg',
+      './Img/AROMATERAPIA/shaumerios.jpg',
     price: 500,
   },
   {

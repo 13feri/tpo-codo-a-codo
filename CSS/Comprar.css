@@ -1,7 +1,7 @@
 /* -----------------FUENTES---------------------- */
 @font-face {
-    font-family: "paper";
-    src: url(../Font/Paper\ Banner-Regular.ttf);
+    font-family: "cute";
+    src: url(../Font/Cute\ Notes.ttf);
 }
 
 @font-face {
@@ -12,6 +12,16 @@
 @font-face {
     font-family: "Darling";
     src: url(../Font/Darling.ttf);
+}
+
+@font-face {
+    font-family: "Cool";
+    src: url(../Font/DK\ Douceur.otf);
+}
+
+@font-face {
+    font-family: "Caidas";
+    src: url(../Font/Hanged\ Letters.ttf);
 }
 
 /* -----------------COLORES---------------------- */
@@ -27,6 +37,7 @@
 .contenedor-nav{
     width: 100%;
     height: auto;
+    display: flex;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -66,84 +77,6 @@
     color: var(--color4);
 }
 
-
-
-
-
-
-
-h1 {
-    font-family: "paper";
-    font-size: 300px;
-    text-align: center;
-
-
-}
-
-main {
-    display: flex;
-    width: 90%;
-    margin: 50px auto;
-}
-
-main nav {
-    flex-direction: column;
-    min-width: 250px;
-    width: 20%;
-    padding: 15px;
-}
-
-main nav input {
-	padding: 0.5rem;
-	background: #e2e8f0;
-	border-radius: 5px;
-	border-color: transparent;
-	letter-spacing: 1px;
-}
-
-main nav h2 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.empresa-btn {
-	display: block;
-	margin: 0.25em 0;
-	padding: 0.25rem;
-	text-transform: capitalize;
-	background: transparent;
-	border-color: transparent;
-	letter-spacing: var(--letterSpacing);
-	color: var(--grey-500);
-	cursor: pointer;
-	transition: var(--transition);
-	font-size: 0.85rem;
-}
-
-main section {
-    flex-direction: column;
-    width: 80%;
-    padding: 15px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    
-}
-
-main section article {
-    height: 234px;
-    width: 250px;
-    margin: 5px;
-    text-align: center;
-    
-}
-
-main section article img {
-    height: 180px;
-    width: 100%;
-    
-}
 /* -----------------FOOTER---------------------- */
 
 .footer{
