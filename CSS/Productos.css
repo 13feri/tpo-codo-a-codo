@@ -137,6 +137,7 @@ main section {
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     
+    
 }
 
 main section article {
@@ -144,6 +145,7 @@ main section article {
     width: 250px;
     margin: 5px;
     text-align: center;
+    
     
 }
 
@@ -160,6 +162,7 @@ main section article a{
 }
 main section article a:hover{
     color: var(--color5);
+    
 }
     
 

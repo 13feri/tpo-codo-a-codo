@@ -115,6 +115,7 @@
     margin: 20px 50px 20px 50px;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
+    
 
     }
     .card-producto{
@@ -135,8 +136,8 @@
 }
 .info-producto{
     text-align: center;
-    background-color: var(--color5);
     width: 100%;
+    
 }
 .btn-ver-detalle{
     border: none;
