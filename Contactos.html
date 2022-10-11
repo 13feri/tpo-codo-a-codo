@@ -7,6 +7,7 @@
     <title>contacto</title>
     <link rel="stylesheet" href="./CSS/Contactos.css">
 
+    <script type="text/javascript" src="./JS/contactos.js"></script>
 
 <script
  src="http://kit.fontawesome.com/eb496ab1a0.js"></script>
@@ -17,6 +18,10 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
 
+     <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.min.css">
+    <meta name ="viewport" content=""initial-scale=1,width="device width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
  
     
     
@@ -24,6 +29,22 @@
 
 </head>
 <body>
+
+    <div class="contenedor-nav">
+        <nav class="nav-bar">
+          <div class="box-logo">
+              <a class="logo" href="Home.html">Bolucompras</a>
+          </div>
+          <div class="nav">
+              <a class="navb-link" href="./Home.html"> HOME</a>
+              <a class="navb-link" href="./Productos.htm">PRODUCTOS</a>
+              <a class="navb-link" href="./Contactos.html">CONTACTOS</a>
+              <a class="navb-link" href="./Preguntas.html">PREGUNTAS FRECUENTAS</a>
+              <a class="navb-link" href="./Comprar.html">¿CÓMO COMPRAR?</a>
+              <a class="navb-link" href="./Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              
+          </div>
+      </div>
    
 
     <div class="contact_-form">
@@ -73,11 +94,34 @@ placeholder="escribe tu telefono">
 required="obligatorio" placeholder="deja aqui tu comentario..."></textarea>
 </p>
 
-<button type="submit" name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
-
+<button type="submit" onclick="getData()"    name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
 <p class="aviso"><span class="obligatorio">*</span>los campos son obligatorios </p>
 </form>       
 
+<div class="footer">
+    <div class="contenedor-footer">
+  
+        <div class="contenedor1">
+            <h4>Bolucompras</h4>
+            <a href="./Home.html">Home</a>
+            <a href="./Productos.htm">Productos</a>
+            <a href="./Contactos.html">Contactos</a>
+            <a href="./Preguntas.html">Pregutas Frecuentes</a>
+            <a href="./Comprar.html">Como Comprar</a>
+            
+        </div>
+        <div class="contenedor2">
+            <h4>Tienda Fisica</h4>
+            <address>Jacinto de Altolaguirre 2654 Barrio Yofre Norte, Cordoba Capital, Argentina ​</address>
+            <p>Lunes a Viernes: 10hrs a 21hrs</p>
+            <p>Fin de Semanas: 10hrs a 14hrs</p>
+            <p>Tel: +54-351-153467894</p>
+            <p>Email:<a href="mailto:bolucompracba@hotmail.com">bolucompracba@hotmail.com</a></p>
+            <p><i class="fa-brands fa-instagram"></i> Instagram:<a href="http://www.instagram.com/" target="_blank">@BolucompraCba</a></p>
+  
+        </div>
+    </div>
+    </div>
 
 </body>
 </html>
