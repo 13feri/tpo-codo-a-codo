@@ -69,9 +69,9 @@
 .nav .navb-link{
     color: var(--color5);
     text-decoration: none;
-    padding: 15px;
+padding: 15px;
     font-family: 'Lato-Light';
-    font-size: 14px;
+    font-size: 15px;
 }
 .nav .navb-link:hover{
     color: var(--color4);
@@ -79,194 +79,133 @@
 
 
 
-    
-    
-    
-    
-    body{
-    height: 100%;
-    font-family: 'Reem Kufi Ink', sans-serif;
-    background-color: white;
-    
-     }
-    
-     .contact_form{
-        width: 460px;
-        height: auto;
-        margin:  80px  auto;
-        border-radius: 10px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        background-color: #fbfbfb;
-        padding-left: 30px;
-     }
-    
-     input{
-        background-color: #fbfbfb;
-        width: 408px;
-        height: 40px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #ab4493;
-        margin-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 20px;
-    
-     }
-    
-    textarea{
-        background-color: #fbfbfb;
-        width: 405px;
-        height: 150px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #ab4493;
-        margin-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 20px;
-        padding-top: 15px;
-    }
-    
-    label{
-        display: block;
-        float: center;
-    }
-    
-    button{
-        height: 45px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-transform: uppercase;
-        background-color: #ab4493;
-        border-color: #ab4493;
-        border-style: solid;
-        border-radius: 10px;
-    
-    }
-    
-    button p {
-        color: #fff;
-    
-    }
-    
-    span{
-        color: #ab4493;
-    }
-    
-    .aviso{
-        font-size: 13px;
-        color: #0e0e0e;;
-    }
-    h1{
-        font-size: 39px;
-        text-align: justify;
-        padding-bottom: 20px;
-        color: #ab4493;
-        
-     
-    }
-    h3{
-        font-size: 16px;
-        padding-bottom: 30px;
-        color: #0e0e0e;
-        }
-    p{
-        font-size: 14px;
-        color : #0e0e0e;
-    
-    
-    }
-    
-    
-    ::-webkit-input-placeholder{
-        color:#2c2b2b;
-    }
-    
-    ::-webkit-textarea-placeholder{
-        color: #2c2b2b;
-    }
-    
-    .formulario input focus {
-        outline: 0;
-        border: 1px solid #97d848;
-    }
-    
-    .formulario  textarea :focus{
-        outline: 0;
-        border: 1px solid #97d848;
-     
-    
-    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
 
 
-    .footer{
-        background-color: var(--color4);
-        width: 100%;
-        padding: 40px;
-        
-    }
-     
-    .contenedor-footer{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 60px;
-    }
-    .contenedor-footer .contenedor1{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor1 h4{
-        font-family: "Cool";
-        font-weight: 600;
-        font-size: 24px;
-        color: var(--color1);
-    }
-    .contenedor1 a{
-        text-decoration: none;
-        color: var(--color5);
-        font-family: 'Lato-Light';
-        font-size: 14px;
-        padding: 5px;
-    }
-    .contenedor1 a:hover{
-        text-decoration: none;
-        color: var(--color3);
-        font-family: 'Lato-Light';
-        font-size: 14px;
-    }
-    .contenedor-footer h4{
-        font-family: 'Cool';
-        font-weight: 600;
-        font-size: 24px;
-    }
-    .contenedor-footer .contenedor2{
-        color: var(--color5);
-        font-family: 'Lato-Light';
-        font-size: 14px;
-        
-    }
-    .contenedor2 h4{
-        font-family: "Cool";
-        font-weight: 600;
-        font-size: 24px;
-        color: var(--color1);
-    }
-    .contenedor2 a{
-        text-decoration: none;
-        color: var(--color5);
-        font-family: 'Lato-Light';
-        font-size: 14px;
-        padding: 5px;
-    }
-    .contenedor2 a:hover{
-        text-decoration: none;
-        color: var(--color3);
-        font-family: 'Lato-Light';
-        font-size: 14px;
-    }
+.mapa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+ }   
+
+body{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url("../img/fondo.jpg") ;
+    width: 480pxpx;
+    margin: 0px auto;
+    
+}
+.form{
+    color: #613a43;
+    width: 400px;
+    padding: 30px;
+    background:#36384c;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 13px 37px #613a43;
+
+ 
+
+    
+}
+.form h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.inputs{
+    width: 100%;
+    background:#E3BAB3 ;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #613a43;
+    font-size: 18px;
+    color:black;
+
+   
+}
+.boton{
+    width: 40%;
+    background: #613a43;
+    border:none;
+    padding: 12px;
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+}
+
+
+.footer{
+    background-color: var(--color4);
+    width: 100%;
+    padding: 40px;
+    
+}
+ 
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+.contenedor-footer .contenedor1{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor1 h4{
+    font-family: "Cool";
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color1);
+}
+.contenedor1 a{
+    text-decoration: none;
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor1 a:hover{
+    text-decoration: none;
+    color: var(--color3);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor-footer h4{
+    font-family: 'Cool';
+    font-weight: 600;
+    font-size: 24px;
+}
+.contenedor-footer .contenedor2{
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    
+}
+.contenedor2 h4{
+    font-family: "Cool";
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color1);
+}
+.contenedor2 a{
+    text-decoration: none;
+    color: var(--color5);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor2 a:hover{
+    text-decoration: none;
+    color: var(--color3);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
     

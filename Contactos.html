@@ -7,10 +7,7 @@
     <title>contacto</title>
     <link rel="stylesheet" href="./CSS/Contactos.css">
 
-    <script type="text/javascript" src="./JS/contactos.js"></script>
-
-<script
- src="http://kit.fontawesome.com/eb496ab1a0.js"></script>
+    <script src="./JS/contactos.js"></script>
     
  
 
@@ -47,56 +44,36 @@
       </div>
    
 
-    <div class="contact_-form">
+    <div class="contact_form">
 
         <div class="formulario">
-
           
             <h1> FORMULARIO  DE  CONTACTOS</h1>
-            <h3>ESCRIBENOS  EN  BREVE  NOS  PONDREMOS  EN  CONTACTO  CONTIGO</h3>
-                
+            <h3>ESCRIBENOS  EN  BREVE  NOS  PONDREMOS  EN  CONTACTO  CONTIGO</h3> 
+            <br>
+        
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2270391649736!2d-57.561361085068114!3d-37.995164452217296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deac9f1b9b1b%3A0x1b8e8894c65d9ea0!2s14%20de%20Julio%201881%2C%20B7600CQM%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665699819545!5m2!1ses-419!2sar" width="400" height="200"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+            </div>
+           
+        <form class="form">
+            <h2>Formulario de Contacto</h2>
+            <input class="inputs" type="text" id="nombre" placeholder="Ingrese su nombre"/>
+     
+            <input class="inputs" type="email" id="mail" placeholder="Ingrese su correo"/>
+     
+            <input class="inputs" type="text" id="asunto" placeholder="Asunto"/>
+     
+            <textarea class="inputs" id="msg" name="user_message" aria-required="true" placeholder="Mensaje"></textarea>
+     
+            <button class="boton" id="send" type="button" >Enviar</button>
+            <button class="boton" type="reset" id="resete" >Resetear </button>
+        </form>
+
     
-<form action="submeter-formulario.php" method="post">
-    <p>
-        <label for="nombre" class="colocar_nombre">NOMBRE<span class="obligatorio">*</span>
-        </label>
-        <input type="text" name="introducir_nombre" id="nombre"
-        required="obligatorio" placeholder="escribe tu nombre">
-    </p>
-    <p>
-        <label for="email" class="colocar_email">EMAIL
-            <span class="obligatorio"> *</span> 
-            </label>
-            <input type="email" 
-            name="introducir_email" id="email"
-             required="obligatorio" placeholder="escribe tu email">
 
-</p>
 
-<p>
-<label for="telefone" class="colocar_telefono" >TELEFONO</label>
-<input type="tel" name="introducir_telefono" id="telefono"
-placeholder="escribe tu telefono">
-</p>
 
-<p>
-
-    <label for="asunto" class="colocar_asunto">ASUNTO<span class="obligatorio">*</span>
-    </label>
-    <input type="text" name="introducir_asunto" id="asunto"
-    required="obligatorio" placeholder="escribe un asunto">
-</p>
-
-<p>
-<label for="mensaje" class="colocar_mensaje"> MENSAJE<span>*</span>
-</label>
-<textarea name="introducir mensaje" id="mensaje"
-required="obligatorio" placeholder="deja aqui tu comentario..."></textarea>
-</p>
-
-<button type="submit" onclick="getData()"    name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
-<p class="aviso"><span class="obligatorio">*</span>los campos son obligatorios </p>
-</form>       
 
 <div class="footer">
     <div class="contenedor-footer">
@@ -122,6 +99,6 @@ required="obligatorio" placeholder="deja aqui tu comentario..."></textarea>
         </div>
     </div>
     </div>
-
+<script defer src="./JS/contactos.js" ></script>
 </body>
 </html>
