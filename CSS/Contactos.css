@@ -87,10 +87,16 @@ padding: 15px;
 }   
 
 
-.mapa{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+.mapa iframe{
+
+    height: 400px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 105;
+    width: 900px;
+    box-shadow: none;
+
  }   
 
 body{
@@ -100,16 +106,21 @@ body{
     
 }
 .form{
+    text-align: left;
     color: #613a43;
     width: 400px;
     padding: 30px;
     background:#36384c;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
+
+    margin-top: -80px;
+    border-radius: 100px;
     font-family: Calibri;
     color: white;
     box-shadow: 7px 13px 37px #613a43;
+    float: right;
+    right: auto;
+    
+
 
  
 
@@ -118,8 +129,11 @@ body{
 .form h2{
     font-size: 25px;
     margin-bottom: 20px;
+    font-family: "darling" ;
+    
 }
 .inputs{
+   
     width: 100%;
     background:#E3BAB3 ;
     padding: 10px;
@@ -145,7 +159,8 @@ body{
 .footer{
     background-color: var(--color4);
     width: 100%;
-    padding: 40px;
+    padding: -120px;
+    margin-top: auto;
     
 }
  
@@ -153,7 +168,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 60px;
+    padding: 60spx;
 }
 .contenedor-footer .contenedor1{
     display: flex;
