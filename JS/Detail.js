@@ -27,4 +27,12 @@
 
 mostrarProductos('Index')
 
+const Clickbutton = document.querySelector('.btn-carrito')
+Clickbutton(btn => {
+  btn.addEventListener('click', addToCarritoItem)
+});
 
+function addToCarritoItem(){
+  const button = e.target
+  console.log(button)
+}
