@@ -27,12 +27,49 @@
 
 mostrarProductos('Index')
 
-const Clickbutton = document.querySelector('.btn-carrito')
-Clickbutton(btn => {
-  btn.addEventListener('click', addToCarritoItem)
-});
+/*Para agregar productos al carrito */
 
-function addToCarritoItem(){
-  const button = e.target
-  console.log(button)
+let btnDetail = document.querySelectorAll('#verCarrito')
+console.log(btnDetail)
+var compras =[]
+
+btnDetail.forEach(btn =>{
+  btn.addEventListener('click', showDetail)
+})
+
+/*Función que busca el detalle del producto*/ 
+
+function showDetail (ev){
+  let add = ev.target
+  if(add){
+    let item = add.closest('.products')
+    let name = item.querySelector('.txt-nombre-producto').innerText
+
+    let find = products.find((x) => {
+      return x.Nombre == String(products)
+    })
+    console.log('find', find)
+    agregaralCarritoDetail(find);{
+      return alert('Producto: ${name} agregado al carrito')
+    }
+  }
+}
+
+/*Funcion que agrega el producto buscado en showDetail a la variable compras*/
+
+function agregaralCarritoDetail(find){
+  for(let i=0; i< compras.length; i++){
+    if(compras[i].Nombre.trim() === find.Nombre.trim()){
+      compras[i].Cantidad++;
+      return null
+    }
+  }
+}
+
+compras.push(find)
+verCarrito()
+guardarEnPC()
+
+function verCarrito(){
+  console.log('Lo que hay en el carrito:', compras)
 }
