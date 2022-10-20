@@ -111,7 +111,7 @@
   
       
 }
-p{
+.gaticos{
     font-family: "Cats";
     text-align: center;
     font-size: 25px;
@@ -120,6 +120,7 @@ p{
 .mew{
     font-family: "Mew";
     font-size: 100px;
+    text-align: center;
 }
 .v-card{
     width: 80%;
