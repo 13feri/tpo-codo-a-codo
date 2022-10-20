@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+      <meta name ="viewport" content=""initial-scale=1,width="device width">
+      <link rel="stylesheet" href="./CSS/API.css">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <link rel="shortcut icon" href="./Img/ICONO/cat-svgrepo-com.svg" type="image/x-icon" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+      <title>Gatitos Randoms</title>
+    </head>
+    <body>
+
+         <!-----------------NAVBAR----------------------- -->
+    <div class="contenedor-nav">
+        <nav class="nav-bar">
+          <div class="box-logo">
+              <a class="logo" href="Home.html">Bolucompras</a>
+          </div>
+          <div class="nav">
+              <a class="navb-link" href="./Home.html"> HOME</a>
+              <a class="navb-link" href="./Productos.htm">PRODUCTOS</a>
+              <a class="navb-link" href="./Contactos.html">CONTACTOS</a>
+              <a class="navb-link" href="./Preguntas.html">PREGUNTAS FRECUENTAS</a>
+              <a class="navb-link" href="./Comprar.html">¿CÓMO COMPRAR?</a>
+              <a class="navb-link" href="./API_CAT.html"><i class="fa-solid fa-cat"></i></a>
+              <a class="navb-link" href="./Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              
+          </div>
+      </div>
+  
+    <!-----------------TITULO----------------------- -->
+ <div class="titulo">
+    <h1 class="tituloprin">GATITOS RANDOMS</h1>
+ </div>
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <v-container>
+
+            <v-layout align-center justify-center>
+
+                    
+             
+                <v-btn dark large @click="getImage" >
+                        GATITO RANDOM PLIS &nbsp; <v-icon>refresh</v-icon>
+                </v-btn>
+            </v-layout>
+            <br>
+            <v-layout row wrap>
+                <v-flex xs12 >
+                <v-card flat tile class="d-flex">
+                    <v-img :src="image.url">
+                    </v-img>
+                </v-card>
+                </v-flex>
+            </v-layout>
+
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
+  <br>
+   <!-----------------FOOTER----------------------- -->
+   <div class="footer">
+    <div class="contenedor-footer">
+
+        <div class="contenedor1">
+            <h4>Bolucompras</h4>
+            <a href="./Home.html">Home</a>
+            <a href="./Productos.htm">Productos</a>
+            <a href="./Contactos.html">Contactos</a>
+            <a href="./Preguntas.html">Pregutas Frecuentes</a>
+            <a href="./Comprar.html">Como Comprar</a>
+            <a href="./API_CAT.html"><i class="fa-solid fa-cat"></i>Gatito Random</a>
+            
+        </div>
+        <div class="contenedor2">
+            <h4>Tienda Fisica</h4>
+            <address>Jacinto de Altolaguirre 2654 Barrio Yofre Norte, Cordoba Capital, Argentina ​</address>
+            <p>Lunes a Viernes: 10hrs a 21hrs</p>
+            <p>Sabado: 10hrs a 14hrs</p>
+            <p>Tel: +54-351-153467894</p>
+            <p>Email:<a href="mailto:bolucompracba@hotmail.com">bolucompracba@hotmail.com</a></p>
+            <p><i class="fa-brands fa-instagram"></i> Instagram:<a href="http://www.instagram.com/" target="_blank">@BolucompraCba</a></p>
+            
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+ 
+  <script>
+    new Vue({ 
+        el: '#app',
+        vuetify: new Vuetify(),
+        data: {
+            image: { url: ""},
+            image_type: 'gif'
+        },
+        watch: {           
+            image_type: function()
+            {
+                this.getImage();
+            }
+        },
+        created(){
+            this.getImage();
+        } ,
+        methods:{
+            async getImage()
+            {
+                try{
+                    axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" 
+
+                    let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit:1, size:"full" , mime_types: this.image_type } } ) 
+                    
+                    this.image = response.data[0] 
+
+                    
+                    console.log("id:", this.image.id)
+                    console.log("url:", this.image.url)
+                    
+                }catch(err){
+                    console.log(err)
+                }
+            }
+        }
+    })
+  </script>
+</body>
+</html>
