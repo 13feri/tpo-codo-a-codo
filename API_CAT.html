@@ -45,6 +45,8 @@
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+      
   <div id="app">
     <v-app>
       <v-content>
@@ -65,8 +67,11 @@
                     <v-img :src="image.url">
                     </v-img>
                 </v-card>
-                </v-flex>
-            </v-layout>
+            </v-flex>
+        </v-layout>
+        <p> { Que tengas un bonito día y un gatito te haga sonreir }</p>
+
+        <p class="mew">D</p>
 
         </v-container>
       </v-content>
@@ -113,7 +118,7 @@
         vuetify: new Vuetify(),
         data: {
             image: { url: ""},
-            image_type: 'gif'
+            
         },
         watch: {           
             image_type: function()
@@ -130,7 +135,7 @@
                 try{
                     axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" 
 
-                    let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit:1, size:"full" , mime_types: this.image_type } } ) 
+                    let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit:1, size:"full" , mime_types: "gif,jpg,png" } } ) 
                     
                     this.image = response.data[0] 
 

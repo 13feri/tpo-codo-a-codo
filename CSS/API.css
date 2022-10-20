@@ -24,6 +24,16 @@
     src: url(../Font/CaviarDreams.ttf);
 }
 
+@font-face {
+    font-family: "Cats";
+    src: url(../Font/CITCAT\ ttf.ttf);
+}
+
+@font-face {
+    font-family: "Mew";
+    src: url(../Font/tender\ kittens.ttf);
+}
+
 
 /* -----------------COLORES---------------------- */
 :root{
@@ -35,6 +45,8 @@
 }
 
 /* -----------------NAVBAR---------------------- */
+
+
 .contenedor-nav{
     width: 100%;
     height: auto;
@@ -45,6 +57,7 @@
     left: 0;
     bottom: 0;
     background-color: var(--color2);
+    z-index: 10;
 }
 
 .contenedor-nav .nav-bar{
@@ -89,6 +102,31 @@
 .subtitulo{
     font-family: "Chicken" ;
 }
+
+#app{
+    
+   padding: 5px;
+   margin: 0 auto;
+   background-color: #E9DCCD;
+  
+      
+}
+p{
+    font-family: "Cats";
+    text-align: center;
+    font-size: 25px;
+}
+
+.mew{
+    font-family: "Mew";
+    font-size: 100px;
+}
+.v-card{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    }
+
 
 /* -----------------FOOTER---------------------- */
 
