@@ -1,11 +1,11 @@
-var nombre = document.getElementById('nombre')
+var nombre = document.getElementById('nombre');
 
-var mail = document.getElementById('mail')
-var asunto = document.getElementById('asunto')
-var msg = document.getElementById('msg')
+var mail = document.getElementById('mail');
+var asunto = document.getElementById('asunto');
+var msg = document.getElementById('msg');
 
-const resete = document.querySelector('#resete')
-const send = document.querySelector('#send')
+const resete = document.querySelector('#resete');
+const send = document.querySelector('#send');
 
 
 send.addEventListener('click', ()=>{
@@ -20,17 +20,17 @@ send.addEventListener('click', ()=>{
     const msgL =msg1.length
 
     if(nameL <= 0){
-        alert("Ingrese primero el nombre")
+        alert("Ingrese primero el nombre");
     }else if(emailL <= 0) {
-        alert("Ingrese primero el correo electrónico")
+        alert("Ingrese primero el correo electrónico");
     }else if(asuntoL <=0){
-        alert("Ingrese primero el asunto")
+        alert("Ingrese primero el asunto");
     }else if(msgL <= 0){
-        alert("Ingrese primero el mensaje")
+        alert("Ingrese primero el mensaje");
     }else{
-        console.log("nombre: "+ name1)
-        console.log("correo: "+ email1)
-        console.log("asunto: "+ asunto1)
+        console.log("nombre: "+ name1);
+        console.log("correo: "+ email1);
+        console.log("asunto: "+ asunto1);
         console.log("mensaje: "+ msg1)
     }
 

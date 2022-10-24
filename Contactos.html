@@ -19,12 +19,15 @@
     <meta name ="viewport" content=""initial-scale=1,width="device width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    
+    
+  
  
     
     
 
 
 </head>
+
 <body>
 
     <div class="contenedor-nav">
@@ -48,6 +51,8 @@
       <h3>ESCRIBENOS  EN  BREVE  NOS  PONDREMOS  EN  CONTACTO  CONTIGO</h3> 
       <br>
 
+
+
     <div class="contact_form">
 
         <div class="formulario">
@@ -55,23 +60,24 @@
             
         
            
-        <form class="form">
+        <form id="form" action="" class="form">
             <h2>Formulario de Contacto</h2>
-            <input class="inputs" type="text" id="nombre" placeholder="Ingrese su nombre"/>
+            
+            <input class="inputs" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
      
-            <input class="inputs" type="email" id="mail" placeholder="Ingrese su correo"/>
+            <input class="inputs" type="email" id="mail" name ="mail" placeholder="Ingrese su correo"/>
      
-            <input class="inputs" type="text" id="asunto" placeholder="Asunto"/>
+            <input class="inputs" type="text" id="asunto" name="asunto" placeholder="Asunto"/>
      
-            <textarea class="inputs" id="msg" name="user_message" aria-required="true" placeholder="Mensaje"></textarea>
+            <textarea class="inputs" id="msg" name="msg" aria-required="true" placeholder="Mensaje"></textarea>
      
-            <button class="boton" id="send" type="button" >Enviar</button>
-            <button class="boton" type="reset" id="resete" >Resetear </button>
-
-
             
 
+            <button type="submit" class="btn btn-secondary btn-block" name="contacto" value="Enviar">Enviar</button>
+            
         </form>
+       
+
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2270391649736!2d-57.561361085068114!3d-37.995164452217296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deac9f1b9b1b%3A0x1b8e8894c65d9ea0!2s14%20de%20Julio%201881%2C%20B7600CQM%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665699819545!5m2!1ses-419!2sar"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
         </div>
@@ -104,6 +110,7 @@
         </div>
     </div>
     </div>
+    
 <script defer src="./JS/contactos.js" ></script>
 </body>
 </html>

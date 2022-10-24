@@ -76,6 +76,24 @@
 .nav .navb-link:hover{
     color: var(--color4);
 }
+/*-------------body--------------------------*/
+
+body{
+    background-color: var(--color1);
+}
+
+.lista{
+    padding: 25px;
+    background-color: var(--color3);
+}
+
+
+.tituloprin {
+    font-family: "paper";
+    font-size: 75px;
+    text-align: center;
+}
+
 
 /* -----------------FOOTER---------------------- */
 
