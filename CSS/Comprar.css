@@ -24,6 +24,11 @@
     src: url(../Font/Hanged\ Letters.ttf);
 }
 
+@font-face {
+    font-family: "paper";
+    src: url(../Font/Paper\ Banner-Regular.ttf);
+}
+
 /* -----------------COLORES---------------------- */
 :root{
     --color1: #E3BAB3;
@@ -76,23 +81,30 @@
 .nav .navb-link:hover{
     color: var(--color4);
 }
+
+/*-------------Titulo--------------------------*/
+
+.tituloprin{
+    font-family: "paper";
+    font-size: 85px;
+    text-align: center;
+    background-color: var(--color1);
+}
 /*-------------body--------------------------*/
 
-body{
-    background-color: var(--color1);
+.contenedor-lista{
+    background-color: var(--color3) ;
 }
 
 .lista{
     padding: 25px;
-    background-color: var(--color3);
+    background-color: var(--color5);
+    font-family: "Lato Light";
+    color: var(--color4);
+    margin: 20px;
 }
 
 
-.tituloprin {
-    font-family: "paper";
-    font-size: 75px;
-    text-align: center;
-}
 
 
 /* -----------------FOOTER---------------------- */

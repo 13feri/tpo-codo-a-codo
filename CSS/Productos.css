@@ -82,6 +82,7 @@
     font-size: 75px;
     text-align: center;
     color: #36384c;
+    background-color: #E3BAB3;
 }
 .subtitulo{
     font-family: "Chicken" ;
@@ -89,8 +90,9 @@
 
 main {
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
+   
 }
 
 main nav {
@@ -98,7 +100,13 @@ main nav {
     min-width: 250px;
     width: 20%;
     padding: 15px;
+    font-family: "Lato Light";
+    color: var(--color4);
+   
+    
 }
+
+
 
 main nav input {
 	padding: 0.5rem;
@@ -106,6 +114,7 @@ main nav input {
 	border-radius: 5px;
 	border-color: transparent;
 	letter-spacing: 1px;
+    font-family: "Lato Light";
 }
 
 main nav h2 {
@@ -118,22 +127,26 @@ main nav h2 {
 	margin: 0.25em 0;
 	padding: 0.25rem;
 	text-transform: capitalize;
-	background: transparent;
 	border-color: transparent;
-	letter-spacing: var(--letterSpacing);
-	color: var(--grey-500);
 	cursor: pointer;
-	transition: var(--transition);
 	font-size: 0.85rem;
+    background-color: var(--color5);
 }
+
+.empresa-btn:hover{
+    background-color: #36384c;
+    color: var(--color5);
+}
+
+
 
 main section {
     flex-direction: column;
     width: 80%;
     padding: 15px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
     gap: 100px;
     
     
@@ -144,6 +157,8 @@ main section article {
     width: 250px;
     margin: 5px;
     text-align: center;
+    font-family: "Lato Light";
+    color: #36384c;
     
     
 }

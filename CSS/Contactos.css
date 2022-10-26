@@ -79,52 +79,47 @@ padding: 15px;
 }
 
 
+/* -----------------TITULO---------------------- */
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}   
+.tituloprin {
+    font-family: "paper";
+    font-size: 75px;
+    text-align: center;
+    background-color: #E3BAB3;
+}
+
+.subtitulito{
+    font-family: "Lato Light";
+    margin-left: 10px;
+}
+ 
+/* -----------------CUERPO---------------------- */
+
 
 
 .mapa iframe{
-
-    height: 400px;
     position: relative;
-    left: 0px;
-    top: 0px;
-    z-index: 105;
-    width: 900px;
-    box-shadow: none;
+    height: 500px;
+    width: 600px;
+    margin-left: 150px;      
+   
+ }  
 
- }   
-
-body{
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url("../img/fondo.jpg") ;
-    width: 480pxpx;
-    margin: 0px auto;
-    
-}
 .form{
     text-align: left;
     color: #613a43;
     width: 400px;
     padding: 30px;
     background:#36384c;
-
-    margin-top: -80px;
+    margin-right: 50px;
     border-radius: 100px;
-    font-family: Calibri;
+    font-family: "Lato Light";
     color: white;
     box-shadow: 7px 13px 37px #613a43;
     float: right;
-    right: auto;
     
-
-
- 
-
+    
     
 }
 
@@ -134,20 +129,22 @@ body{
 .form h2{
     font-size: 25px;
     margin-bottom: 20px;
-    font-family: "darling" ;
+    font-family: "Caviar" ;
     float: left;
+    color: var(--color5);
     
 }
 .inputs{
    
     width: 100%;
-    background:#E3BAB3 ;
+    background: var(--color5) ;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #613a43;
     font-size: 18px;
     color:black;
+    font-family: "Lato Light";
 
    
 }
@@ -156,20 +153,28 @@ body{
     background: #613a43;
     border:none;
     padding: 12px;
-    color: white;
+    color: var(--color1);
     margin: 10px;
     font-size: 15px;
+    font-family: "Lato Light";
+    border-radius: 8px;
+    border: 2px solid #E3BAB3;
+}
+.boton:hover{
+    background: var(--color3);
+    color: #36384c;
 }
 
 #truco{opacity: 0;
 
 }
 
+/* -----------------FOOTER---------------------- */
+
 .footer{
     background-color: var(--color4);
     width: 100%;
-    padding: -120px;
-    margin-top: auto;
+    padding: 40px;
     
 }
  
@@ -177,7 +182,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 60spx;
+    padding: 60px;
 }
 .contenedor-footer .contenedor1{
     display: flex;

@@ -4,8 +4,8 @@ var mail = document.getElementById('mail');
 var asunto = document.getElementById('asunto');
 var msg = document.getElementById('msg');
 
-const resete = document.querySelector('#resete');
-const send = document.querySelector('#send');
+
+
 
 
 send.addEventListener('click', ()=>{
@@ -35,8 +35,7 @@ send.addEventListener('click', ()=>{
     }
 
 })
-const $form=
-document.querySelector('#form')
+const $form = document.querySelector('#form');
 
 $form.addEventListener(btn,handleSubmit)
 

@@ -26,7 +26,7 @@ function mostrarProductos(ev){
                             <img src="${proc.image}" class="product-img img" alt="">
                             <footer>
                             <h5 class="product-name">${proc.title}</h5>
-                            <span class="product-price">${proc.price}</span>
+                            <span class="product-price">$${proc.price}</span>
                             </footer>
                             <a href="./Detail.html?IdProducto=${proc.id}">Ver más</a>
                         </article> `
@@ -59,7 +59,7 @@ txtBuscar.addEventListener('keyup', (ev) => {
                     <img src="${proc.image}" class="product-img img" alt="">
                     <footer>
                     <h5 class="product-name">${proc.title}</h5>
-                    <span class="product-price">${proc.price}</span>
+                    <span class="product-price">$${proc.price}</span>
                     </footer>
                     <a href="./Detail.html?IdProducto=${proc.id}">Ver más</a>
                 </article> `

@@ -1,7 +1,7 @@
 /* -----------------FUENTES---------------------- */
 @font-face {
-    font-family: "paper";
-    src: url(../Font/Paper\ Banner-Regular.ttf);
+    font-family: "MewCute";
+    src: url(../Font/Cute\ Meow.otf);
 }
 
 @font-face {
@@ -94,11 +94,12 @@
 /* -----------------TITULO---------------------- */
 
 .tituloprin {
-    font-family: "paper";
+    font-family: "MewCute";
     font-size: 75px;
     text-align: center;
-    color: #36384c;
+    background-color: #E3BAB3;
 }
+
 .subtitulo{
     font-family: "Chicken" ;
 }
@@ -131,6 +132,8 @@
 
 /* -----------------FOOTER---------------------- */
 
+
+/* -----------------FOOTER---------------------- */
 
 .footer{
     background-color: var(--color4);

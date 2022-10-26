@@ -85,6 +85,7 @@
     font-family: "paper";
     font-size: 75px;
     text-align: center;
+    background-color: #E3BAB3;
 }
 
 
@@ -126,7 +127,7 @@
     text-align: left;
 }
 .box-precio .precio{
-    font-family: 'Lato-Light';
+    font-family: 'Lato Light';
     font-size: 18px;
     color: var(--color3);
 }
@@ -137,6 +138,7 @@
     margin-top: 10px;
     overflow: hidden;
     color: #613a43;
+    font-family: "Lato Light";
 }
 .btn-carrito{
     background-color: #613a43;
