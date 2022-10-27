@@ -19,7 +19,7 @@
      
     `);
 h1.innerHTML = producto.title
-precio.innerHTML = `$ ${producto.price} ,00`
+precio.innerHTML = `$ ${producto.price} `
 descripcion.innerHTML = producto.description
 categoria.innerHTML = `Categoria: ${producto.company}`
 
